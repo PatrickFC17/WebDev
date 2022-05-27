@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+figure {
+    text-align: center;
+    border-style: solid;
+    border-color: darkblue;
+    border-radius: 7px;
+    border-width: 5px;
+    width: 32rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    background-color: #1c0a1f;
+    margin: auto;
+    margin-top: 2rem;
+    background-image: linear-gradient(
+        to bottom right,
+        #190e33,
+        #250e36,
+        #1c0a1f,
+        #360e2d,
+        #330e18
+    );
+}
+
+img {
+    width: 24rem;
+    height: 27rem;
+}
+
+span {
+    font-family: Impact, fantasy;
+    font-size: 25px;
+}
