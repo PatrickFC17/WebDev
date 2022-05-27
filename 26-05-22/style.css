@@ -1,5 +1,15 @@
 body {
     background-color: black;
+    background-image: linear-gradient(
+        to bottom,
+        #000005,
+        #000006,
+        #000007,
+        #000008,
+        #000007,
+        #000006,
+        #000005
+    );
     display: flex;
     justify-content: center;
 }
