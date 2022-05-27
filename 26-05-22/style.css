@@ -11,7 +11,9 @@ body {
         #000005
     );
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
+    align-content: center;
 }
 
 figure {
@@ -24,8 +26,7 @@ figure {
     padding-top: 2rem;
     padding-bottom: 1rem;
     background-color: #1c0a1f;
-    margin: auto;
-    margin-top: 11%;
+    margin-left: 5%;
     background-image: linear-gradient(
         to bottom right,
         #190e33,
@@ -44,4 +45,34 @@ img {
 span {
     font-family: Impact, fantasy;
     font-size: 25px;
+}
+
+.container {
+    text-align: center;
+    margin-top: 2rem;
+    border-style: solid;
+    border-color: purple;
+    border-radius: 10px;
+    border-width: 12px;
+    padding-bottom: 12px;
+    background-color: pink;
+    background-image: linear-gradient(
+        to bottom right,
+        #670ced,
+        #ac0cf7,
+        #d600e0,
+        #f70c97,
+        #ed0c21
+    );
+    box-shadow: 0 0 27px purple;
+    animation: pulse 1s infinite;
+}
+
+#alguma-coisa {
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    stroke: #db00db;
+    stroke-width: 5;
 }
