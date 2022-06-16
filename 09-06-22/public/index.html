@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+      <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+            <link rel="stylesheet" href="style.css">
+            <link rel="shortcut icon" href="d20-icon.ico" type="image/x-icon">
+            <title>Forms 09-06-22</title>
+      </head>
+      <body>
+            <div class="card">
+                  <div class="card-header">
+                        <h1>Restaurant Requests</h1>
+                  </div>
+                  <div class="card-body">
+                        <form action="D:\Documentos\ifnmg-3ano\desenvolvimento-web\WebDev\09-06-22\src\Controller.php" method="post">
+                              <div class="row">
+                                    <div class="col-md-6">
+                                          <label for="name">
+                                                <span style="color: #2019FC; margin-left: 2px;">Name * </span>
+                                          </label>
+                                          <input type="text" id="name" class="form-control" placeholder="Insert Name">
+                                    </div>
+                                    <div class="col-md-6">
+                                          <label for="">
+                                                <span style="color: #2019FC; margin-left: 2px">E-Mail * </span>
+                                          </label>
+                                          <input type="email" id="email" class="form-control" placeholder="Insert E-Mail">
+                                    </div>
+                              </div>
+                              <div class="row mb-3">
+                                    <div class="d-flex flex-row">
+                                          <div id="selection-container" class="col-md-6 mt-4 me-4">
+                                                <div id="plate-selection" class="pe-0 w-100 h-25">
+                                                      <select name="plate" id="plate_selection" class="form-select">
+                                                            <option selected disabled>Select a plate *</option>
+                                                            <option value="lasanha">Lasanha</option>
+                                                            <option value="pizza">Pizza</option>
+                                                            <option value="scrambled eggs">Scrambled Eggs</option>
+                                                            <option value="sandwich">Sandwich</option>
+                                                            <option value="waffles">Waffles</option>
+                                                      </select>
+                                                </div>
+                                                <div class="row">
+                                                      <div class="checkbox-group m-1 w-100">
+                                                            <div class="form-text">
+                                                                  <p>Would you want some juice?</p>
+                                                            </div>
+                                                            <div class="row ms-3">
+                                                                  <div class="form-check">
+                                                                        <input type="checkbox" id="confirm" class="form-check-input" name="juice_confirm" value="true">
+                                                                        <label for="confirm">Yes</label>
+                                                                  </div>
+                                                                  <div class="form-check">
+                                                                        <input type="checkbox" id="deny" class="form-check-input" name="juice_deny" value="false">
+                                                                        <label for="deny">No</label>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col-md-6 mt-3">
+                                                <div class="radio-check">
+                                                      <div class="row mb-1">
+                                                            <div class="form-text p-0">
+                                                                  <p style="margin: auto;">Choose a type of pepper: </p>
+                                                            </div>
+                                                      </div>
+                                                      <div class="row ms-1">
+                                                            <div class="form-check">
+                                                                  <div class="col-md-2">
+                                                                        <input type="radio" id="bell-pepper" class="form-check-input" name="pepper_type" value="bell pepper">
+                                                                        <label for="bell-pepper" class="form-check-label">Bell</label>
+                                                                  </div>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                  <div class="col-md-2">
+                                                                        <input type="radio" id="anaheim-pepper" class="form-check-input" name="pepper_type" value="anaheim pepper">
+                                                                        <label for="anaheim-pepper" class="form-check-label">Anaheim</label>
+                                                                  </div>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                  <div class="col-md-2">
+                                                                        <input type="radio" id="piri-piri-pepper" class="form-check-input" name="pepper_type" value="piri piri pepper">
+                                                                        <label for="piri-piri-pepper" class="form-check-label">Piri Piri</label>
+                                                                  </div>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                  <div class="col-md-2">
+                                                                        <input type="radio" id="mirasol-pepper" class="form-check-input" name="pepper_type" value="mirasol pepper">
+                                                                        <label for="mirasol-pepper" class="form-check-label">Mirasol</label>
+                                                                  </div>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                  <div class="col-md-3">
+                                                                        <input type="radio" id="scotch-bonnet-pepper" class="form-check-input" name="pepper_type" value="scotch bonnet pepper">
+                                                                        <label for="scotch-bonnet-pepper" class="form-check-label">Scotch Bonnet</label>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="row d-flex justify-content-center">
+                                    <div class="col-md-5">
+                                          <button class="btn btn-primary w-100" type="submit">Save</button>
+                                    </div>
+                              </div>
+                        </form>
+                  </div>
+                  <div class="card-footer d-flex justify-content-end align-items-center mb-3 ms-3 me-3" style="height: 3.5rem">
+                        <p class="me-4 fs-6">
+                              <span style="color: #30383D">&#169; Istarië</span>
+                        </p>
+                  </div>
+            </div>
+      </body>
+</html>

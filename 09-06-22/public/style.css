@@ -1,0 +1,38 @@
+body {
+      position: relative;
+      transform: translate(0, 25%);
+}
+
+.card {
+      margin: 0 12% 0 12%;
+}
+
+.card-header {
+      background-color: #198AFC;
+}
+
+h1 {
+      text-align: center;
+}
+
+#selection-container {
+      width: 33.7rem;
+}
+
+#radio-selection-text {
+      padding-left: 0;
+}
+
+p {
+      margin-top: 1rem;
+      font-size: 17px;
+      color: #2019FC;
+}
+
+.radio-check {
+      margin-left: 0.90rem;
+}
+
+.checkbox-group.m-1 {
+      width: 15rem;
+}
